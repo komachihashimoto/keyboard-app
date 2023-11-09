@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>着せ替えキーボード</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="Display" class="display">
+    <hi class="page-title">着せ替えキーボード</hi>
+    <div id="keyBoard" class="keyboard">
+      <div id="R1" class="r1 line">
+        <div id="Esc" class="esc cap">Esc</div>
+        <div id="One" class="one cap">!<br>1</div>
+        <div id="Two" class="Two cap">@<br>2</div>
+        <div id="Three" class="three cap">#<br>3</div>
+        <div id="Four" class="four cap">$<br>4</div>
+        <div id="Five" class="five cap">%<br>5</div>
+        <div id="Six" class="six cap">^<br>6</div>
+        <div id="Seven" class="seven cap">&<br>7</div>
+        <div id="Eight" class="eight cap">*<br>8</div>
+        <div id="Nine" class="nine cap">(<br>9</div>
+        <div id="Zero" class="zero cap">)<br>0</div>
+        <div id="Minus" class="minus cap">－<br>-</div>
+        <div id="Plus" class="plus cap">+<br>=</div>
+        <div id="Buck" class="back">Backspace</div>
+      </div>
+      <div id="R2" class="r2 line">
+        <div id="Tab" class="tab">Tab</div>
+        <div id="Q" class="q cap">Q</div>
+        <div id="W" class="w cap">W</div>
+        <div id="E" class="e cap">E</div>
+        <div id="R" class="r cap">R</div>
+        <div id="T" class="t cap">T</div>
+        <div id="Y" class="y cap">Y</div>
+        <div id="U" class="u cap">U</div>
+        <div id="I" class="i cap">I</div>
+        <div id="O" class="o cap">O</div>
+        <div id="P" class="p cap">P</div>
+        <div id="kagiL" class="kagil cap">{<br>[</div>
+        <div id="kagiR" class="kagir cap">}<br>]</div>
+        <div id="Stick" class="stick">|<br>\</div>
+      </div>
+      <div id="R3" class="r3 line">
+        <div id="Caps" class="caps">Caps Lock</div>
+        <div id="A" class="a cap">A</div>
+        <div id="S" class="s cap">S</div>
+        <div id="D" class="d cap">D</div>
+        <div id="F" class="f cap">F</div>
+        <div id="G" class="g cap">G</div>
+        <div id="H" class="h cap">H</div>
+        <div id="J" class="j cap">J</div>
+        <div id="K" class="k cap">K</div>
+        <div id="L" class="l cap">L</div>
+        <div id="Colon" class="colon cap">:<br>;</div>
+        <div id="Quotation" class="quotation cap">"<br>'</div>
+        <div id="Enter" class="enter">Enter</div>
+      </div>
+      <div id="R4" class="r4 line">
+        <div id="ShiftL" class="shiftl">Shift</div>
+        <div id="Z" class="z cap">Z</div>
+        <div id="X" class="x cap">X</div>
+        <div id="C" class="c cap">C</div>
+        <div id="V" class="v cap">V</div>
+        <div id="B" class="b cap">B</div>
+        <div id="N" class="n cap">N</div>
+        <div id="M" class="m cap">M</div>
+        <div id="yamaL" class="yamal cap"><<br>,</div>
+        <div id="yamaR" class="yamar cap">><br>.</div>
+        <div id="Ques" class="ques cap">?<br>/</div>
+        <div id="ShiftR" class="shiftr">Shift</div>
+      </div>
+      <div id="Bottom" class="bottom line">
+        <div id="CtrL" class="ctrl botm">Ctrl</div>
+        <div id="Win" class="win botm">NA</div>
+        <div id="AltL" class="altl botm">Alt</div>
+        <div id="Space" class="space"></div>
+        <div id="AltR" class="altr botm">Alt</div>
+        <div id="Fn" class="fn botm">Fn</div>
+        <div id="Menu" class="menu botm">Menu</div>
+        <div id="CtrR" class="ctrr botm">Ctrl</div>
+      </div>
+    </div>
+    <div class="pickers">
+      <label for="colors">背景色（デスク風）
+      <input type="color" list="deskColors" id="colors" class="color-picker"/></label>
+      <datalist id="deskColors">
+        <option value="#ffffff"></option>
+        <option value="#000000"></option>
+        <option value="#4B2D1C"></option>
+        <option value="#C69E6E"></option>
+        <option value="#937B69"></option>
+        <option value="#84331F"></option>
+        <option value="#7E5435"></option>
+        <option value="#cdffff"></option>
+        <option value="#d9d9d9"></option>
+        <option value="#C27526"></option>
+      </datalist>
+      <label>色を選ぼう！ <input type="color" id="colorPicker" class="color-picker"></label>
+      <label>文字色を選ぼう！ <input type="color" id="fontColorPicker" class="color-picker"></label>
+      <button id="resetBtn" class="reset-btn">リセット</button>
+    </div>
+    <div class="message">色を付けたい部分をタッチしよう！</div>
+  </div>
+  <script src="./looks.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+/*
+    html5doctor.com Reset Stylesheet
+    v1.6.1
+    Last Updated: 2010-09-17
+    Author: Richard Clark - http://richclarkdesign.com
+    Twitter: @rich_clark
+    */
+    html {
+      touch-action: manipulation;
+  }
+  html, body, div, span, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  abbr, address, cite, code,
+  del, dfn, em, img, ins, kbd, q, samp,
+  small, strong, sub, sup, var,
+  b, i,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section, summary,
+  time, mark, audio, video {
+      margin:0;
+      padding:0;
+      border:0;
+      outline:0;
+      font-size:100%;
+      vertical-align:baseline;
+      background:transparent;
+  }
+  body {
+      line-height:1;
+  }
+  article,aside,details,figcaption,figure,
+  footer,header,hgroup,menu,nav,section {
+      display:block;
+  }
+  ul {
+      list-style:none;
+  }
+  blockquote, q {
+      quotes:none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content:'';
+      content:none;
+  }
+  a {
+      margin:0;
+      padding:0;
+      font-size:100%;
+      vertical-align:baseline;
+      background:transparent;
+  }
+  /* change colours to suit your needs */
+  ins {
+      background-color:#ff9;
+      color:#000;
+      text-decoration:none;
+  }
+  /* change colours to suit your needs */
+  mark {
+      background-color:#ff9;
+      color:#000;
+      font-style:italic;
+      font-weight:bold;
+  }
+  del {
+      text-decoration: line-through;
+  }
+  abbr[title], dfn[title] {
+      border-bottom:1px dotted;
+      cursor:help;
+  }
+  table {
+      border-collapse:collapse;
+      border-spacing:0;
+  }
+  /* change border colour to suit your needs */
+  hr {
+      display:block;
+      height:1px;
+      border:0;  
+      border-top:1px solid #cccccc;
+      margin:1em 0;
+      padding:0;
+  }
+  input, select {
+      vertical-align:middle;
+  }
+  /* Reset CSS ここまで */
+
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-weight: bold;
+}
+
+.page-title {
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 0 0 2px #fff;
+  margin-top: 5vh;
+}
+
+.keyboard {
+  border: 13px outset rgba(240,240,240,0.99);
+  border-radius: 5px;
+  margin: 10vh;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 15px 20px 20px;
+}
+.cap {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.line {
+  display: flex;
+}
+
+.back {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 80px;
+  padding: 5px 10px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.tab {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 60px;
+  padding: 5px 7.5px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.stick {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 60px;
+  padding: 5px 7.5px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.caps {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 80px;
+  padding: 5px 8.75px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.enter,
+.shiftl {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 98px;
+  padding: 5px 11.25px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.shiftr {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 137.5px;
+  padding: 5px 13.75px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.botm {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 50px;
+  padding: 5px 6.25px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+
+.space {
+  background-color: #fff;
+  border: 7px outset #f6f6f6;
+  border-radius: 5px;
+  margin: 2px;
+  height: 40px;
+  width: 358px;
+  padding: 5px 31.25px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+}
+.pickers {
+  display: flex;
+}
+
+.color-picker {
+  border: 5px outset ;
+  border-radius: 10%;
+  height: 7vh;
+  width: 7vh;
+  margin: 0 1vw;
+  box-shadow: 3px 5px 5px;
+}
+
+label {
+  text-shadow: 0 0 2px #fff;
+}
+
+.reset-btn {
+  margin: 0 8vw;
+  border: 2px outset rgb(141, 0, 0);
+  background-color: red;
+  font-weight: bold;
+  color: #fff;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  box-shadow: -3px -3px 8px #000 inset;
+}
+
+.message {
+  margin: 5vh;
+  text-shadow: 0 0 2px #fff;
+}
