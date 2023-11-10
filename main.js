@@ -13,6 +13,7 @@ function darken(color, percentage) {
 
 const keyBoard  = document.getElementById('keyBoard');
 const resetBtn  = document.getElementById('resetBtn');
+const allChange = document.getElementById('allChange');
 const bodyColor = document.body;
 
 let capColor        = '#000000';
@@ -28,7 +29,8 @@ colorPicker.addEventListener('change', () => {
 });
 
 //キーキャップ装飾時、色を付けない部分の設定
-let excludedIds = ['Display','keyBoard','R1','R2','R3','R4','Bottom','colorPicker','fontColorPicker','colors'];
+let excludedIds = ['Display','keyBoard','R1','R2','R3','R4','Bottom','colorPicker','fontColorPicker','colors','allChange','resetBtn'];
+let excludedIds2 = ['Display','keyBoard','R1','R2','R3','R4','Bottom','colorPicker','fontColorPicker','colors','allChange','resetBtn'];
 
 //各キーキャップ部分の色付け判定
 document.body.addEventListener('click', function(event) {
@@ -69,4 +71,20 @@ if (resetBtn) {
 //背景色の付与
 colors.addEventListener('change', () => {
   bodyColor.style.backgroundColor = colors.value;
+});
+
+//一括変更ボタン押下時の処理
+allChange.addEventListener('click', function()  {
+  let allElements = document.getElementsByTagName('*');
+
+    for (let i = 0; i < allElements.length; i++) {
+        let element = allElements[i];
+
+        // 除外リストにないIDのみ色を変更
+        if (element.id && !excludedIds2.includes(element.id)) {
+          element.style.backgroundColor = capColor;
+          element.style.borderColor = darken(capColor, 10);
+          element.style.color = fontColor;
+      }
+    }
 });

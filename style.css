@@ -244,8 +244,20 @@ label {
   text-shadow: 0 0 2px #fff;
 }
 
+.change-btn {
+  margin: 0 4vw 0 8vw;
+  border: 2px outset rgb(175, 137, 0);
+  background-color: rgb(255, 187, 0);
+  font-weight: bold;
+  color: #fff;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  box-shadow: -3px -3px 8px #000 inset;
+}
+
 .reset-btn {
-  margin: 0 8vw;
+  margin: 0 8vw 0 4vw;
   border: 2px outset rgb(141, 0, 0);
   background-color: red;
   font-weight: bold;
