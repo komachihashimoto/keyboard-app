@@ -99,6 +99,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 1.5s;
 }
 
 .display {
