@@ -92,11 +92,18 @@ allChange.addEventListener('click', function()  {
 //ここからanime.js
 
 //タイトルが上から出現
-anime({
+anime.timeline({
   targets: '.page-title',
-  translateY: [-1000, 0],
-  duration: 1500,
   easing: 'easeOutBounce',
+})
+.add({
+  translateY: [-500, 0],
+  scaleY: [1, 0.9], // 要素の高さを一時的に90%に変更
+  duration: 1500,
+})
+.add({
+  scaleY: [0.9, 1], // 要素の高さを元に戻す
+  duration: 800, // アニメーションの期間（ミリ秒）
 });
 
 //キーボードが左からスライド
