@@ -1,3 +1,4 @@
+'use strict';
 
 //darken関数の定義
 function darken(color, percentage) {
