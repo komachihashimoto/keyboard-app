@@ -88,3 +88,29 @@ allChange.addEventListener('click', function()  {
       }
     }
 });
+
+//ここからanime.js
+
+//タイトルが上から出現
+anime({
+  targets: '.page-title',
+  translateY: [-1000, 0],
+  duration: 1500,
+  easing: 'easeOutBounce',
+});
+
+//キーボードが左からスライド
+anime({
+  targets: '.keyboard',
+  translateX: [-1000, 0],
+  duration: 2000,
+  easing: 'easeOutElastic',
+});
+
+//ツールboxが右からスライド
+anime({
+  targets: '.pickers',
+  translateX: [1000, 0],
+  duration: 2000,
+  easing: 'easeOutElastic',
+});
