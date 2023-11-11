@@ -122,3 +122,13 @@ anime({
   duration: 2000,
   easing: 'easeOutElastic',
 });
+
+//メッセージがふわっと出る
+anime({
+  targets: '.message',
+  delay:2000,
+  opacity: [0, 1],
+  easing: 'easeInOutQuad',
+    duration: 1000,
+});
+

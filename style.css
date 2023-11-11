@@ -124,6 +124,7 @@ body {
   margin: 10vh;
   background-color: rgb(0, 0, 0);
   box-shadow: 15px 20px 20px;
+  text-align: ;
 }
 .cap {
   background-color: #fff;
@@ -230,6 +231,11 @@ body {
 }
 .pickers {
   display: flex;
+  background-color: #ffe0c6;
+  border: 2px solid #ff7700;
+  padding: 2vh 1vw;
+  border-radius: 10px;
+  color: #9b4800;
 }
 
 .color-picker {
@@ -247,7 +253,7 @@ label {
 
 .change-btn {
   margin: 0 4vw 0 8vw;
-  border: 2px outset rgb(175, 137, 0);
+  border: 1px outset rgb(140, 110, 0);
   background-color: rgb(255, 187, 0);
   font-weight: bold;
   color: #fff;
@@ -259,7 +265,7 @@ label {
 
 .reset-btn {
   margin: 0 8vw 0 4vw;
-  border: 2px outset rgb(141, 0, 0);
+  border: 1px outset rgb(141, 0, 0);
   background-color: red;
   font-weight: bold;
   color: #fff;
@@ -269,14 +275,8 @@ label {
   box-shadow: -3px -3px 8px #000 inset;
 }
 
-.pickers {
-  background-color: #979797;
-  border: 2px solid #010101;
-  padding: 2vh 1vw;
-  border-radius: 10px;
-}
-
 .message {
   margin: 5vh;
   text-shadow: 0 0 2px #fff;
+  font-size: 1.5em;
 }
