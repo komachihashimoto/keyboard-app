@@ -1,17 +1,5 @@
 'use strict';
 
-//darken関数の定義
-function darken(color, percentage) {
-  let r = parseInt(color.slice(1, 3), 16),
-      g = parseInt(color.slice(3, 5), 16),
-      b = parseInt(color.slice(5, 7), 16);
-      r = Math.floor(r * (100 - percentage) / 100);
-      g = Math.floor(g * (100 - percentage) / 100);
-      b = Math.floor(b * (100 - percentage) / 100);
-      return "#" + r.toString(16).padStart(2, '0') + g.toString(16).padStart(2, '0') + b.toString(16).padStart(2, '0');
-}
-
-
 const keyBoard  = document.getElementById('keyBoard');
 const resetBtn  = document.getElementById('resetBtn');
 const allChange = document.getElementById('allChange');
@@ -23,6 +11,18 @@ let backColor       = '#000000';
 let colorPicker     = document.getElementById('colorPicker');
 let fontColorPicker = document.getElementById('fontColorPicker');
 let colors          = document.getElementById('colors');
+
+
+//darken関数の定義
+function darken(color, percentage) {
+  let r = parseInt(color.slice(1, 3), 16),
+      g = parseInt(color.slice(3, 5), 16),
+      b = parseInt(color.slice(5, 7), 16);
+      r = Math.floor(r * (100 - percentage) / 100);
+      g = Math.floor(g * (100 - percentage) / 100);
+      b = Math.floor(b * (100 - percentage) / 100);
+      return "#" + r.toString(16).padStart(2, '0') + g.toString(16).padStart(2, '0') + b.toString(16).padStart(2, '0');
+};
 
 //選んだ色の保持
 colorPicker.addEventListener('change', () => {
@@ -69,7 +69,7 @@ if (resetBtn) {
   });
 };
 
-//背景色の付与
+//背景色の付与と文字色の反転
 colors.addEventListener('change', () => {
   bodyColor.style.backgroundColor = colors.value;
 });
