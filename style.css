@@ -112,10 +112,10 @@ body {
 }
 
 .page-title {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
-  text-shadow: 0 0 2px #fff;
   margin-top: 5vh;
+  -webkit-text-stroke: 1px #ffffff;
 }
 
 .keyboard {
@@ -125,6 +125,7 @@ body {
   background-color: rgb(0, 0, 0);
   box-shadow: 15px 20px 20px;
 }
+
 .cap {
   background-color: #fff;
   border: 7px outset #f6f6f6;
@@ -134,6 +135,11 @@ body {
   width: 40px;
   padding: 5px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.cap:hover {
+  border: 7px solid #fff;
 }
 
 .line {
@@ -149,6 +155,11 @@ body {
   width: 80px;
   padding: 5px 10px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.back:hover {
+  border: 7px solid #fff;
 }
 
 .tab {
@@ -160,6 +171,11 @@ body {
   width: 60px;
   padding: 5px 7.5px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  border: 7px solid #fff;
 }
 
 .stick {
@@ -171,6 +187,11 @@ body {
   width: 60px;
   padding: 5px 7.5px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.stick:hover {
+  border: 7px solid #fff;
 }
 
 .caps {
@@ -182,6 +203,11 @@ body {
   width: 80px;
   padding: 5px 8.75px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.caps:hover {
+  border: 7px solid #fff;
 }
 
 .enter,
@@ -194,6 +220,12 @@ body {
   width: 98px;
   padding: 5px 11.25px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.enter:hover,
+.shiftl:hover {
+  border: 7px solid #fff;
 }
 
 .shiftr {
@@ -205,6 +237,11 @@ body {
   width: 137.5px;
   padding: 5px 13.75px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.shiftr:hover {
+  border: 7px solid #fff;
 }
 
 .botm {
@@ -216,6 +253,11 @@ body {
   width: 50px;
   padding: 5px 6.25px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
+}
+
+.botm:hover {
+  border: 7px solid #fff;
 }
 
 .space {
@@ -227,7 +269,13 @@ body {
   width: 358px;
   padding: 5px 31.25px;
   box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.3s;
 }
+
+.space:hover {
+  border: 7px solid #fff;
+}
+
 .pickers {
   display: flex;
   background-color: #ffe0c6;
@@ -246,20 +294,17 @@ body {
   box-shadow: 3px 5px 5px;
 }
 
-label {
-  text-shadow: 0 0 2px #fff;
-}
-
 .change-btn {
   margin: 0 4vw 0 8vw;
-  border: 1px outset rgb(140, 110, 0);
-  background-color: rgb(255, 187, 0);
+  border: 1px outset rgb(141, 0, 0);
+  background-color: rgb(255, 0, 0);
   font-weight: bold;
   color: #fff;
   height: 10vh;
   width: 10vh;
   border-radius: 50%;
   box-shadow: -3px -3px 8px #000 inset;
+  transition: all 0.3s;
 }
 
 .reset-btn {
@@ -272,10 +317,19 @@ label {
   width: 10vh;
   border-radius: 50%;
   box-shadow: -3px -3px 8px #000 inset;
+  transition: all 0.3s;
+}
+
+.change-btn:hover,
+.reset-btn:hover {
+  border: 1px inset rgb(141, 0, 0);
+  box-shadow: 0px 0px 18px #000 inset;
+  transition: all 0.3s;
 }
 
 .message {
   margin: 5vh;
-  text-shadow: 0 0 2px #fff;
   font-size: 1.5em;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #ffffff;
 }

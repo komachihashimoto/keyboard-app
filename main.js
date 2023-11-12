@@ -127,8 +127,8 @@ anime({
 anime({
   targets: '.message',
   delay:2000,
-  opacity: [0, 1],
+  opacity: [0, 1,],
   easing: 'easeInOutQuad',
-    duration: 1000,
+  duration: 1000,
 });
 
