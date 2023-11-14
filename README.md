@@ -58,3 +58,7 @@ https://zhao-seti-ekibodo.onrender.com
 # 今後の実装
 
 他のレイアウトのキーボードを追加してみたいです。
+
+# 制作時間
+
+約2日
