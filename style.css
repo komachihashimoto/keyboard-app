@@ -115,7 +115,6 @@ body {
   font-size: 4em;
   font-weight: bold;
   margin-top: 5vh;
-  -webkit-text-stroke: 1px #ffffff;
 }
 
 .keyboard {
@@ -331,5 +330,4 @@ body {
   margin: 5vh;
   font-size: 1.5em;
   font-weight: bold;
-  -webkit-text-stroke: 1px #ffffff;
 }
